@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import "reset";
+
+body,
+html {
+  font-family: 'Barlow', sans-serif !important;
+}
+
+body {
+  line-height: 1;
+}
+
+.container-background {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.page-background {
+  position: absolute;
+  left: -10%;
+  top: -10%;
+  width: 150%;
+  height: 150vh;
+  background: linear-gradient(to right, rgba(41,25,88,.8) 8%,rgba(97,86,188,.8) 50%,rgba(95,84,186,.8) 62%,rgba(40,26,88,.8) 70%), url("https://happywall-img-gallery.imgix.net/647/city_lights_display.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: blur(30px);
+  z-index: 1;
+  // background: red;
+}
+
+.center-site {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container-site {
+  display: grid;
+  height: 80vh;
+  width: 75vw;
+  border-radius: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100% 1fr;
+  overflow: hidden;
+  position: relative;
+
+  .navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(41,25,88,.8) 8%,rgba(97,86,188,.8) 50%,rgba(95,84,186,.8) 62%,rgba(40,26,88,.8) 100%), url("https://happywall-img-gallery.imgix.net/647/city_lights_display.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(65,46,120,0.85);
+    -moz-box-shadow: 0 2px 5px 0 rgba(65,46,120,0.85);
+    box-shadow: 0 2px 5px 0 rgba(65,46,120,0.85);
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        display: block;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        margin-right: 20px;
+
+        span {
+          font-size: 1.5rem;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  .content-area {
+    background: #f8f7fc;
+    overflow-y: scroll;
+    padding-top: 60px;
+
+    .jumbo {
+      height: calc(100%);
+      width: 100%;
+      position: relative;
+      // display: flex;
+      // justify-content: flex-end;
+      .backimg {
+        height: calc(100%);
+        width: 100%;
+        background: linear-gradient(to right, rgba(41,25,88,.4) 8%,rgba(95,84,186,.4) 50%,rgba(40,26,88,.4) 100%), url("https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg");
+        background-position: center center;
+        background-repeat: none;
+        background-size: cover;
+        filter: grayscale(700%);
+      }
+
+      .intro-message {
+        position: absolute;
+        display: block;
+        width: 30%;
+        height: 100%;
+        background: rgba(29,13,60,.8);
+        padding: 40px;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+          font-family: 'Alegreya Sans SC', sans-serif;
+          color: white;
+          font-weight: 100;
+          font-size: 3rem;
+          margin-bottom: 100px;
+          line-height: 1.5;
+        }
+      }
+    }
+
+    .hire-status {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-bottom: 50px;
+
+      .primary-button {
+        color: white;
+        font-weight: 500;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        background: #57bcfe;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 30px;
+        -webkit-box-shadow: 0 10px 44px 0 rgba(87, 187, 254, 0.50);
+        -moz-box-shadow: 0 10px 44px 0 rgba(87, 187, 254, 0.50);
+        box-shadow: 0 10px 44px 0 rgba(87, 187, 254, 0.50);
+      }
+    }
+
+    .container-about {
+      background: white;
+      border-radius: 4px;
+      padding: 40px;
+      margin-bottom: 40px;
+      -webkit-box-shadow: 0 10px 126px 0 rgba(106,110,161,0.33);
+      -moz-box-shadow: 0 10px 126px 0 rgba(106,110,161,0.33);
+      box-shadow: 0 10px 126px 0 rgba(106,110,161,0.33);
+
+      .job-chart {
+        width: 50%;
+      }
+
+      h2 {
+        color: #3f3f65;
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        margin-bottom: 40px;
+      }
+
+      p {
+        color: #6a6ea1;
+        font-size: 1rem;
+        text-transform: capitalize;
+        font-weight: 400;
+        line-height: 2;
+        margin-bottom: 20px;
+      }
+    }
+
+    .social-media {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+      .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+          color: #57bcfe;
+        }
+
+        .logo span[class^="ti"] {
+          font-size: 3rem;
+          margin-bottom: 15px;
+          display: block;
+        }
+
+        .stats {
+          font-size: 1.1rem;
+
+          span {
+            text-align: center;
+            display: block;
+            font-size: 2rem;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

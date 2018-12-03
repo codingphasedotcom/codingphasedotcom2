@@ -1,0 +1,222 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
+* {
+  box-sizing: border-box; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body,
+html {
+  font-family: 'Barlow', sans-serif !important; }
+
+body {
+  line-height: 1; }
+
+.container-background {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative; }
+
+.page-background {
+  position: absolute;
+  left: -10%;
+  top: -10%;
+  width: 150%;
+  height: 150vh;
+  background: linear-gradient(to right, rgba(41, 25, 88, 0.8) 8%, rgba(97, 86, 188, 0.8) 50%, rgba(95, 84, 186, 0.8) 62%, rgba(40, 26, 88, 0.8) 70%), url("https://happywall-img-gallery.imgix.net/647/city_lights_display.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-filter: blur(30px);
+  filter: blur(30px);
+  z-index: 1; }
+
+.center-site {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.container-site {
+  display: grid;
+  height: 80vh;
+  width: 75vw;
+  border-radius: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100% 1fr;
+  overflow: hidden;
+  position: relative; }
+  .container-site .navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(41, 25, 88, 0.8) 8%, rgba(97, 86, 188, 0.8) 50%, rgba(95, 84, 186, 0.8) 62%, rgba(40, 26, 88, 0.8) 100%), url("https://happywall-img-gallery.imgix.net/647/city_lights_display.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px 0 rgba(65, 46, 120, 0.85); }
+    .container-site .navigation ul {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .container-site .navigation ul li {
+        display: block;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        margin-right: 20px; }
+        .container-site .navigation ul li span {
+          font-size: 1.5rem;
+          margin-right: 20px; }
+  .container-site .content-area {
+    background: #f8f7fc;
+    overflow-y: scroll;
+    padding-top: 60px; }
+    .container-site .content-area .jumbo {
+      height: calc(100%);
+      width: 100%;
+      position: relative; }
+      .container-site .content-area .jumbo .backimg {
+        height: calc(100%);
+        width: 100%;
+        background: linear-gradient(to right, rgba(41, 25, 88, 0.4) 8%, rgba(95, 84, 186, 0.4) 50%, rgba(40, 26, 88, 0.4) 100%), url("https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg");
+        background-position: center center;
+        background-repeat: none;
+        background-size: cover;
+        -webkit-filter: grayscale(700%);
+        filter: grayscale(700%); }
+      .container-site .content-area .jumbo .intro-message {
+        position: absolute;
+        display: block;
+        width: 30%;
+        height: 100%;
+        background: rgba(29, 13, 60, 0.8);
+        padding: 40px;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .container-site .content-area .jumbo .intro-message h2 {
+          font-family: 'Alegreya Sans SC', sans-serif;
+          color: white;
+          font-weight: 100;
+          font-size: 3rem;
+          margin-bottom: 100px;
+          line-height: 1.5; }
+    .container-site .content-area .hire-status {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-bottom: 50px; }
+      .container-site .content-area .hire-status .primary-button {
+        color: white;
+        font-weight: 500;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        background: #57bcfe;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 30px;
+        box-shadow: 0 10px 44px 0 rgba(87, 187, 254, 0.5); }
+    .container-site .content-area .container-about {
+      background: white;
+      border-radius: 4px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 126px 0 rgba(106, 110, 161, 0.33); }
+      .container-site .content-area .container-about .job-chart {
+        width: 50%; }
+      .container-site .content-area .container-about h2 {
+        color: #3f3f65;
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        margin-bottom: 40px; }
+      .container-site .content-area .container-about p {
+        color: #6a6ea1;
+        font-size: 1rem;
+        text-transform: capitalize;
+        font-weight: 400;
+        line-height: 2;
+        margin-bottom: 20px; }
+    .container-site .content-area .social-media {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; }
+      .container-site .content-area .social-media .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out; }
+        .container-site .content-area .social-media .social:hover {
+          color: #57bcfe; }
+        .container-site .content-area .social-media .social .logo span[class^="ti"] {
+          font-size: 3rem;
+          margin-bottom: 15px;
+          display: block; }
+        .container-site .content-area .social-media .social .stats {
+          font-size: 1.1rem; }
+          .container-site .content-area .social-media .social .stats span {
+            text-align: center;
+            display: block;
+            font-size: 2rem;
+            margin-bottom: 10px; }
+

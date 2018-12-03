@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Joe Santos Garcia - Full Stack Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/dist/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow|Alegreya+Sans+SC:100,300,400,500,600,700" rel="stylesheet">
+  
+</head>
+
+<body>
+  <div class="container-background">
+    <div class="page-background"></div>
+    <div class="center-site">
+      <div class="container-site">
+        <div class="navigation">
+          <ul>
+            <li><span class="ti-home"></span> Courses</li>
+            <li><span class="ti-crown"></span> Timeline</li>
+            <li><span class="ti-home"></span> Blog</li>
+            <li><span class="ti-desktop"></span> Resources</li>
+            <li><span class="ti-email"></span> Contact</li>
+          </ul>
+        </div>
+        
+        <div class="content-area">
+          <div class="jumbo">
+            <div class="backimg">
+              
+            </div>
+            <div class="intro-message">
+              <h2>What if you could earn 100k a year?<br>
+              Would you take that opportunity?</h2>
+            </div>
+          </div>
+          <div class="hire-status">
+            <a href="contact.html" class="primary-button">
+              Hire Me!
+            </a>
+          </div>
+          <div class="container-about">
+            <div class="job-chart">
+              <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+            
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="social-media">
+            <div class="social twitter">
+              <div class="logo">
+                <span class="ti-twitter"></span>
+              </div>
+              <div class="stats">
+                <span>1k</span>
+                followers
+              </div>
+            </div>
+            <div class="social instagram">
+              <div class="logo">
+                <span class="ti-instagram"></span>
+              </div>
+              <div class="stats">
+                <span>2k</span>
+                followers
+              </div>
+            </div>
+            <div class="social github">
+              <div class="logo">
+                <span class="ti-github"></span>
+              </div>
+              <div class="stats">
+                <span>94</span>
+                followers
+              </div>
+            </div>
+            <div class="social youtube">
+              <div class="logo">
+                <span class="ti-youtube"></span>
+              </div>
+              <div class="stats">
+                <span>31k</span>
+                followers
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script>
+  var ctx = document.getElementById('myChart');
+var myChart = new Chart(ctx, {
+	type: 'line',
+	data: {
+		labels: [
+			'Retail',
+			'Cashiers',
+			'Food Prep',
+			'Office Clerk',
+			'Waiters',
+			'Customer Service Rep',
+			'Laborer',
+			'Janitor',
+			'Developers'
+		],
+		datasets: [
+			{
+				label: 'American Working',
+				data: [
+					4480000,
+					3340000,
+					3020000,
+					2830000,
+					2660000,
+					2400000,
+					2390000,
+					2800000,
+					210000
+				],
+				backgroundColor: [
+					'rgba(255, 99, 132, 0.2)',
+					'rgba(54, 162, 235, 0.2)',
+					'rgba(255, 206, 86, 0.2)',
+					'rgba(75, 192, 192, 0.2)',
+					'rgba(153, 102, 255, 0.2)',
+					'rgba(255, 159, 64, 0.2)'
+				],
+				borderColor: [
+					'rgba(255,99,132,1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)',
+					'rgba(75, 192, 192, 1)',
+					'rgba(153, 102, 255, 1)',
+					'rgba(255, 159, 64, 1)'
+				],
+				borderWidth: 1
+			},
+			{
+				label: 'Average Income',
+				data: [25370, 18880, 29990, 68910, 20880, 33370, 26690, 25140, 94000],
+				backgroundColor: [
+					'rgba(255, 99, 132, 0.2)',
+					'rgba(54, 162, 235, 0.2)',
+					'rgba(255, 206, 86, 0.2)',
+					'rgba(75, 192, 192, 0.2)',
+					'rgba(153, 102, 255, 0.2)',
+					'rgba(255, 159, 64, 0.2)'
+				],
+				borderColor: [
+					'rgba(255,99,132,1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)',
+					'rgba(75, 192, 192, 1)',
+					'rgba(153, 102, 255, 1)',
+					'rgba(255, 159, 64, 1)'
+				],
+				borderWidth: 1
+			}
+		]
+	},
+	options: {
+		responsive: false,
+		scales: {
+			yAxes: [
+				{
+					ticks: {
+						beginAtZero: true
+					}
+				}
+			]
+		}
+	}
+});
+</script>
+  
+</body>
+
+</html>
